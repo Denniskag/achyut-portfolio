@@ -31,13 +31,13 @@ export const achievements: Achievement[] = [
     colorClass: "text-green-600 dark:text-green-400",
   },
   {
-    id: "appthon",
+    id: "appthon2",
     title: "Python for Machine Learning",
     icon: "award",
     colorClass: "text-purple-600 dark:text-purple-400",
   },
   {
-    id: "appthon",
+    id: "appthon3",
     title: "Using Evidence to Improve Jobs and Income in Agriculture- World Bank Group",
     icon: "award",
     colorClass: "text-purple-600 dark:text-purple-400",

@@ -150,7 +150,7 @@ export function Hero() {
             >
               <div className="relative aspect-square w-full max-w-md overflow-hidden rounded-full">
                 <Image
-                  src="/images/profile.webp"
+                  src="/images/Protrait.png"
                   alt="Dennis Kagaba"
                   fill
                   className="object-cover"
