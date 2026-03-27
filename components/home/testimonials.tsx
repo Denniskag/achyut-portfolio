@@ -16,13 +16,15 @@ export function Testimonials() {
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
           className="mb-12 text-center"
-        >
-          <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
+        > 
+          {/*
+          <h2  className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
             Recommendations
           </h2>
           <p className="mx-auto mt-4 max-w-[700px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
             What mentors and colleagues say about my work
           </p>
+          */}
         </motion.div>
 
         <div className="mx-auto grid max-w-5xl gap-8 md:grid-cols-2">

@@ -9,6 +9,46 @@ import { Input } from "@/components/ui/input";
 import { useState } from "react";
 import { StarHeader } from "@/components/shared/star-header";
 
+interface BlogPost {
+  id: string;
+  title: string;
+  excerpt: string;
+  imageUrl: string;
+  date: string;
+  author: string;
+  link: string; // this is the link that will open in a new tab
+}
+
+const blogPosts: BlogPost[] = [
+  {
+    id: "1",
+    title: "Explainable customer churn prediction using SHAP",
+    excerpt: "Most churn models focus on predicting who will leave, but the real value lies in understanding why. In this article, I explore how I built an explainable customer churn model using SHAP to uncover the key drivers behind customer behavior and improve decision-making.",
+    imageUrl: "/images/mine1.jpg",
+    date: "2026-03-26",
+    author: "Dennis",
+    link: "https://medium.com/@denniskag/most-churn-models-tell-you-who-will-leave-but-the-real-value-is-understanding-why-2abc25b02f68",
+  },
+  {
+    id: "2",
+    title: "Machine Learning Trends in 2026",
+    excerpt: "Explore the latest machine learning trends and technologies shaping the AI landscape in 2026.",
+    imageUrl: "/images/ml-trends.png",
+    date: "2026-03-25",
+    author: "Dennis",
+    link: "https://yourblog.com/posts/ml-trends-2026",
+  },
+  {
+    id: "3",
+    title: "Deep Learning with GANs",
+    excerpt: "A beginner-friendly guide to Generative Adversarial Networks (GANs) and practical examples.",
+    imageUrl: "/images/gan.png",
+    date: "2026-03-24",
+    author: "Dennis",
+    link: "https://yourblog.com/posts/deep-learning-gans",
+  },
+];
+
 export default function BlogPage() {
   const [email, setEmail] = useState("");
   const [submitted, setSubmitted] = useState(false);
@@ -36,12 +76,12 @@ export default function BlogPage() {
             </div>
 
             <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl md:text-6xl">
-              Blog Coming Soon
+              My Blog
             </h1>
 
             <p className="max-w-[700px] text-muted-foreground md:text-xl/relaxed">
-              I&apos;m working on some interesting articles about web development, blockchain
-              technology, and machine learning. Stay tuned for insightful content!
+              I share practical insights, projects, and lessons learned in AI,
+              Machine Learning, and data science.
             </p>
           </motion.div>
         </div>
@@ -49,6 +89,41 @@ export default function BlogPage() {
 
       <div className="container mx-auto px-4 pb-12 md:px-6 md:pb-24">
         <div className="mx-auto mt-16 grid max-w-5xl gap-8 md:grid-cols-2 lg:grid-cols-3">
+          {blogPosts.map((post, i) => (
+  <motion.a
+    key={post.id}
+    href={post.link}
+    target="_blank"
+    rel="noopener noreferrer"
+    initial={{ opacity: 0, y: 20 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.5, delay: i * 0.1 }}
+  >
+    <Card className="h-full hover:shadow-lg transition-shadow duration-300">
+      <CardContent className="flex h-full flex-col justify-between p-6">
+        <img
+          src={post.imageUrl}
+          alt={post.title}
+          className="h-48 w-full object-cover rounded-md"
+        />
+
+        <div className="mt-4">
+          <h3 className="text-lg font-semibold">{post.title}</h3>
+          <p className="mt-2 text-sm text-muted-foreground">
+            {post.excerpt}
+          </p>
+        </div>
+
+        <div className="mt-4 flex items-center justify-between text-xs text-muted-foreground">
+          <span>{post.author}</span>
+          <span>{post.date}</span>
+        </div>
+      </CardContent>
+    </Card>
+  </motion.a>
+))}
+          
+          {/*
           {[1, 2, 3].map((i) => (
             <motion.div
               key={i}
@@ -83,8 +158,9 @@ export default function BlogPage() {
               </Card>
             </motion.div>
           ))}
-        </div>
-
+          */}
+          </div>
+        
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -130,15 +206,15 @@ export default function BlogPage() {
           <p>Check back soon for articles on:</p>
           <div className="mt-4 flex flex-wrap justify-center gap-2">
             <span className="rounded-full bg-primary/10 px-3 py-1 text-xs text-primary">
-              Web Development
+              AI
             </span>
             <span className="rounded-full bg-primary/10 px-3 py-1 text-xs text-primary">
-              Blockchain
+              Technology
             </span>
             <span className="rounded-full bg-primary/10 px-3 py-1 text-xs text-primary">
-              Next.js
+              Deep Learning
             </span>
-            <span className="rounded-full bg-primary/10 px-3 py-1 text-xs text-primary">React</span>
+            <span className="rounded-full bg-primary/10 px-3 py-1 text-xs text-primary">Python</span>
             <span className="rounded-full bg-primary/10 px-3 py-1 text-xs text-primary">
               Machine Learning
             </span>

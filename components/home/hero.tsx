@@ -12,10 +12,10 @@ import { getIconComponent } from "@/lib/icons";
 import { StarHeader } from "@/components/shared/star-header";
 
 const displayedSkills = [
-  "Software Engineer",
-  "Full Stack Developer",
-  "Blockchain Builder",
-  "Systems Thinker",
+  "Data Scientist",
+  //"Machine Learning Engineer",
+  //"Data Analyst",
+  "AI Enthusiast",
 ];
 
 export function Hero() {
@@ -47,7 +47,7 @@ export function Hero() {
                   transition={{ duration: 0.5 }}
                 >
                   <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
-                    Hi, I&apos;m Achyut Katiyar
+                    Hi, I&apos;m Dennis Kagaba
                   </h1>
                 </motion.div>
                 <motion.div
@@ -77,8 +77,8 @@ export function Hero() {
                   transition={{ duration: 0.5, delay: 0.2 }}
                   className="max-w-[600px] text-muted-foreground md:text-xl"
                 >
-                  Software engineer building full-stack applications and decentralized systems. MS
-                  Computer Science at Northeastern University. Co-Chair of MIT Bitcoin Expo.
+                  Data Scientist building machine learning models, analytics solutions, and AI-driven insights.
+                  
                 </motion.p>
               </div>
 
@@ -98,7 +98,7 @@ export function Hero() {
                 <Button variant="outline" size="lg" asChild>
                   <a
                     href="/resume.pdf"
-                    download="Achyut_Katiyar_Resume.pdf"
+                    download="Dennis_Kagaba_Resume.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -151,7 +151,7 @@ export function Hero() {
               <div className="relative aspect-square w-full max-w-md overflow-hidden rounded-full">
                 <Image
                   src="/images/profile.webp"
-                  alt="Achyut Katiyar"
+                  alt="Dennis Kagaba"
                   fill
                   className="object-cover"
                   priority

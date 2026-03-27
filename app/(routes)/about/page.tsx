@@ -10,13 +10,11 @@ import { skills, type SkillCategory } from "@/data/skills";
 import { StarHeader } from "@/components/shared/star-header";
 
 const achievements = [
-  { highlight: "$1,500", label: "Nillion Track Prize — Hacker House Goa 2024" },
-  { highlight: "$600", label: "Move it with Aptos Hackathon" },
-  { highlight: "$500", label: "Optimum Hacknet @ MIT" },
-  { highlight: "$500", label: "Marbelism Track — HACKSRM 5.0 2024" },
-  { highlight: "1st", label: "Appthon 1.0 Winner" },
-  { highlight: "Co-Chair", label: "MIT Bitcoin Expo — Hackathon & Marketing" },
-  { highlight: "Convener", label: "University Technical Team — 40% engagement increase" },
+  { highlight: "Research", label: "Co-authored a paper on Explainable Deep Ensemble Learning for Credit Default Prediction" },
+  { highlight: "Specialization", label: "Focused on privacy-preserving fraud detection using federated learning (MSc Research)" },
+  { highlight: "Industry", label: "Data Analyst in the coffee export sector, delivering insights for supply chain and compliance" },
+  { highlight: "Domain Expertise", label: "Experience in EUDR compliance, traceability, and socio economic data analysis" },
+  { highlight: "Vision", label: "Building a data driven consultancy focused on MSMEs and financial intelligence solutions" },
 ];
 
 export default function AboutPage() {
@@ -54,11 +52,13 @@ export default function AboutPage() {
               <Card>
                 <CardContent className="space-y-4 p-6 leading-relaxed">
                   <p>
-                    I&apos;m Achyut Katiyar, a software engineer pursuing a Master&apos;s in
-                    Computer Science at Northeastern University. I build full-stack applications and
-                    decentralized systems — from production websites serving thousands of users to
-                    blockchain platforms that have won multiple hackathon prizes.
+                    I&apos;m a Data Scientist focused on turning data into practical solutions
+                    using machine learning, statistical analysis, and data visualization.
+                    Experienced in building predictive models uncovering patterns in complex datasets, and communicating insights
+                    that guide strategic decisions. Passionate about developing data driven systems that improve efficiency, product performance, and
+                    business impact.
                   </p>
+                  {/*
                   <p>
                     I&apos;m currently Co-Chair of Hackathon and Marketing for the MIT Bitcoin Expo,
                     where I built the official event website and coordinate the 36-hour hackathon. I
@@ -70,7 +70,8 @@ export default function AboutPage() {
                     data analysis and ML, and Docker/Kubernetes for infrastructure. I&apos;ve won
                     over $3,000 in hackathon prizes and built projects used by thousands.
                   </p>
-                </CardContent>
+                  */}
+                  </CardContent>
               </Card>
 
               <h2 className="mt-8 mb-4 text-2xl font-bold">Education</h2>
@@ -144,7 +145,7 @@ export default function AboutPage() {
           >
             <div className="mb-6 flex items-center justify-center gap-2">
               <Trophy className="h-5 w-5 text-primary" />
-              <h2 className="text-2xl font-bold">Achievements</h2>
+              <h2 className="text-2xl font-bold">Professional Highlights</h2>
             </div>
             <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
               {achievements.map((item, i) => (

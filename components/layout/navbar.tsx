@@ -251,13 +251,13 @@ export function Navbar() {
                     href="/"
                     className="font-display text-xl font-bold transition-colors hover:text-primary"
                   >
-                    <motion.span
+                    {/*<motion.span
                       initial={{ opacity: 0, x: -20 }}
                       animate={{ opacity: 1, x: 0 }}
                       transition={{ duration: 0.5 }}
                     >
                       Achyut Katiyar
-                    </motion.span>
+                    </motion.span>*/}
                   </Link>
                 </div>
 

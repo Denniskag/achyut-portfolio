@@ -21,10 +21,10 @@ export function Footer() {
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
           {/* About Section */}
           <div className="space-y-4">
-            <h3 className="text-lg font-bold">Achyut Katiyar</h3>
+            <h3 className="text-lg font-bold">Dennis Kagaba</h3>
             <p className="max-w-xs text-sm text-muted-foreground">
-              Software Engineer based in Boston. MS Computer Science at Northeastern. Building
-              full-stack applications and decentralized systems.
+              Data scientist specializing in machine learning, fraud detection, and data-driven solutions, with experience in
+              finance, agriculture, and applied AI research.
             </p>
           </div>
 
@@ -125,7 +125,7 @@ export function Footer() {
           <div className="flex flex-col items-center justify-between gap-4 md:flex-row">
             <div className="flex items-center text-sm text-muted-foreground">
               <Copyright className="mr-1 h-3.5 w-3.5" />
-              <span>{new Date().getFullYear()} Achyut Katiyar. All rights reserved.</span>
+              <span>{new Date().getFullYear()} Dennis Kagaba. All rights reserved.</span>
             </div>
             <div className="flex items-center gap-1.5 text-sm text-muted-foreground">
               <span>Built with</span>
