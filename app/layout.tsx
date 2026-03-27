@@ -3,7 +3,7 @@ import { ClientLayout } from "./client-layout";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Achyut Katiyar | Software Engineer",
+  title: "Dennis Kagaba | Data Scientist",
   description:
     "Software Engineer building full-stack applications and decentralized systems. MS Computer Science at Northeastern University. Co-Chair of MIT Bitcoin Expo.",
   metadataBase: new URL("https://achyutkatiyar.com"),
