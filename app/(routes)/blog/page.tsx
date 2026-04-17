@@ -40,12 +40,12 @@ const blogPosts: BlogPost[] = [
   },
   {
     id: "3",
-    title: "Deep Learning with GANs",
-    excerpt: "A beginner-friendly guide to Generative Adversarial Networks (GANs) and practical examples.",
-    imageUrl: "/images/EUDR.jpg",
-    date: "2026-03-31",
+    title: "When Data Becomes Too Much: What Comes Next?",
+    excerpt: "More data doesn’t always mean better outcomes. As datasets grow, they often introduce noise, complexity, and inefficiencies that slow systems and weaken decisions. The solution is shifting from collecting more data to focusing on the right data clean, relevant, and aligned with decisions. Success comes from simplifying, improving quality, and prioritizing signal over volume.",
+    imageUrl: "/images/data_too_much.png",
+    date: "2026-04-15",
     author: "Dennis",
-    link: "https://yourblog.com/posts/deep-learning-gans",
+    link: "https://medium.com/@denniskag/when-data-becomes-too-much-what-comes-next-20bc4aaedde7",
   },
 ];
 

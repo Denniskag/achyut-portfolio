@@ -95,6 +95,7 @@ export function Hero() {
                     <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                   </Link>
                 </Button>
+               {false && ( 
                 <Button variant="outline" size="lg" asChild>
                   <a
                     href="/resume.pdf"
@@ -106,6 +107,7 @@ export function Hero() {
                     Resume
                   </a>
                 </Button>
+               )} 
               </motion.div>
 
               {/* Social Links - Added here from navbar */}

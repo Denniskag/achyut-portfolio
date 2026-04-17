@@ -53,8 +53,8 @@ export const experiences: Experience[] = [
     title: "Data Analytics Consulting Graduate Trainee",
     company: "KPMG",
     location: "Remote",
-    startDate: "May 2022",
-    endDate: "March 2023",
+    startDate: "May 2021",
+    endDate: "May 2022",
     description:
       "Delivered data quality and analytics support by assessing datasets, identifying risks and inconsistencies, and generating insights to inform client decision-making and business improvements..",
     achievements: [
